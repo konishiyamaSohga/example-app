@@ -7,6 +7,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         document.getElementById('docs-card-content')?.classList.add('!flex-row');
         document.getElementById('background')?.classList.add('!hidden');
     };
+
     function handleClick(){
         console.log("test click");
     }
@@ -14,7 +15,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <button onClick={handleClick()}>test</button>
+            <button onClick={handleClick}>test</button>
             <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
                 <img
                     id="background"
